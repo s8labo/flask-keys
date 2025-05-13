@@ -48,10 +48,3 @@ def proxy_tts():
     except Exception as e:
         print("TTS Proxy Error:", e)
         return jsonify({"error": "Internal Server Error"}), 500
-
-
-if __name__ == '__main__':
-    app.run(
-        host='0.0.0.0',
-        port=5000
-    )
