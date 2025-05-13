@@ -4,7 +4,7 @@ import requests
 import os
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+# CORS(app)  # Enable CORS for all routes
 
 # Set your Azure Direct Line secret as an environment variable for security
 DIRECTLINE_SECRET = os.environ.get("DIRECTLINE_SECRET")
@@ -53,5 +53,5 @@ def proxy_tts():
 if __name__ == '__main__':
     app.run(
         host='0.0.0.0',
-        port=443
+        port=5000
     )
