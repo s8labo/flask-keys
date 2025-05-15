@@ -4,9 +4,6 @@ import requests
 import os
 
 app = Flask(__name__)
-
-@app.route("/")
-def index():
 CORS(app)  # Enable CORS for all routes
 
 # Set your Azure Direct Line secret as an environment variable for security
