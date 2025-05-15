@@ -1,13 +1,18 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import requests
-import os
+# from flask import Flask, request, jsonify
+# from flask_cors import CORS
+# import requests
+# import os
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
     return "Hello World!"
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
 # CORS(app)  # Enable CORS for all routes
 
 # # Set your Azure Direct Line secret as an environment variable for security
